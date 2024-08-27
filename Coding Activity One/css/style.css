@@ -1,0 +1,16 @@
+/* This is an empty style sheet in CSS */
+
+table{
+    border:3px solid black;
+  }
+th{
+    border:1px solid black;
+  }
+#Todays-Picture-Img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#Todays-Picture{
+    border:3px solid black;
+}

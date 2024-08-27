@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My UI</title>
+    
+    <!-- The following line references an external css file -->
+    <!-- It defines style rules for your page, and elements in your page -->
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>USER NAME</h1>
+    <div id="Todays-Picture">
+        <h2>Today's Picture</h2>
+        <img id="Todays-Picture-Img" src="todays-image.jpg" alt="Today's Picture">
+    </div>
+    <div id="Inspirational Quote">
+        <h1>"Attitude is a little thing that makes a big difference."</h1>
+    </div>
+    <div id="Previous-Entries">
+        <table>
+            <tr>
+                <th>Date and Time</th>
+                <th>Entry Contents</th>
+                <th>Hours of Sleep</th>
+                <th>Today's Mood</th>
+            </tr>
+            <tr>
+                <th>8/26/2024 12:00</th>
+                <th>Today was the first day of school</th>
+                <th>8 Hours</th>
+                <th>Nervous <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" fill="yellow" />
+                  </svg></th>
+            </tr>
+            <tr>
+                <th>8/27/2024 12:00</th>
+                <th>Today was the second day of school</th>
+                <th>8 Hours</th>
+                <th>Happy <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" fill="green" />
+                  </svg></th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="Add-Entry">
+        <input type="text" placeholder="Type you jounal entry here!">
+        <input type="number">
+        <input type="button" value="Submit">
+    </div>
+
+    <!-- Load external JS files -->
+    <!-- This is where you will do most of the 'work' for your applications -->
+    <script src="js/main.js"></script>
+</body>
+</html>
