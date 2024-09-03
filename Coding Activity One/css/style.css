@@ -1,5 +1,29 @@
 /* This is an empty style sheet in CSS */
 
+#Flex-Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#User-Name{
+  background-color: rgb(43, 43, 43);
+  color: white;
+  padding:1em 100%;
+  text-align: center;
+  
+}
+#Background{
+  background-color: blanchedalmond;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Picture-Header{
+  text-align: center;
+}
 table{
     border:3px solid black;
   }
@@ -12,5 +36,9 @@ th{
 }
 
 #Todays-Picture{
-    border:3px solid black;
+    border:10px solid rgb(84, 39, 0);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: chocolate;
+    
 }
