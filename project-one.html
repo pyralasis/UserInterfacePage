@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Lewis Project One</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Josh Lewis</h1>
+        </header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a class="navPage" href="index.html">Home</a></li>
+                    <li><a class="navPage" href="education.html">Education</a></li>
+                    <li><a class="navPage" href="project-one.html">Project One</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <h1>User Inteface Design Project One</h1>
+
+            <figure>
+                <img class="thumbnail" src="images/ProjectOneThumbnail.png" alt="Project One">
+                <caption>My Project One Webpage</caption>
+            </figure>
+
+            <p>
+                This is the Game Session Tracker I made for my User Interface Design class. Users can add games and
+                create journal entries specific to a given game.
+            </p>
+            <p>The Github repository for this project can be found <a
+                    href="https://github.com/pyralasis/UserInterfaceProjectOne">here</a>.</p>
+            <p>The publicly hosted page for this project can be found <a
+                    href="https://pyralasis.github.io/UserInterfaceProjectOne/">here</a>.</p>
+
+            <h1>Design Work</h1>
+
+            <h1>Interface Description</h1>
+
+            <h2>Game Carousel</h2>
+            <figure><img class="thumbnail" src="images/GameCarousel.png"></figure>
+            <p>The Game Carousel allows you to select the current game. It will dislpay a maximum of five games at a
+                time. The arrows can be used to scroll left or right to change the currently displayed games. The 'Add
+                Game' button allows the user to add a new game to the carousel</p>
+
+            <h2>Game Information</h2>
+            <figure><img class="thumbnail" src="images/GameInformation.png"></figure>
+            <p>Game Information displays the cover, title, genre, develovper, total playtime, and number of goals a
+                game has. </p>
+
+            <h2>Add Game</h2>
+            <figure><img class="thumbnail" src="images/AddGame.png"></figure>
+            <p>Add Game allows the user to add a new game. It is activated through the 'Add Game' button in the Game
+                Carousel. It replaces the Game Information until the new game is submitted or the action is canceled.
+            </p>
+
+            <h2>Goals</h2>
+            <figure><img class="thumbnail" src="images/Goals.png"></figure>
+            <p>Goals allows the user to track goals for their game. The checkmark can be clicked to mark a goal as
+                completed. New goals can be added when the user is adding a new entry to the game.
+            </p>
+
+            <h2>My Entries</h2>
+            <figure><img class="thumbnail" src="images/Entries.png"></figure>
+            <p>My Entries shows all of the entries made for a game. The selector on the left allows the user to select
+                an entry to be displayed on the right. The selector displays entries by the date they were submitted.
+                The entry shows the time played for the session, the rating of the session and things the user liked or
+                disliked about the session. The circle next to the rating changes color based on the rating starting at
+                red for 1 and changing to green at 10. The 'Edit Entry' button allows the user to edit the current
+                entry.
+            </p>
+
+            <h2>Add Entry</h2>
+            <figure><img class="thumbnail" src="images/AddEntry.png"></figure>
+            <p>
+                Submit a New Entry allows the user to create a new entry for the currently selected game. The can log
+                things they liked or disliked, a general rating of 1-10, and the playtime of the session. They can also
+                add a new goal to their goals tracker.
+            </p>
+
+            <h2>Edit Entry</h2>
+            <figure><img class="thumbnail" src="images/Edit Entry.png"></figure>
+            <p>
+                Edit an Entry allows the user to edit a specified entry. It is accessed through the 'Edit Entry' button
+                in My Entries.
+            </p>
+
+            <h1>Implementation</h1>
+            <p>This was created using base Svelte. The default demo data is saved in a store. This store is used for
+                further data added by the user. </p>
+
+
+            <h1>Future Work</h1>
+            Some future things that could be added/worked on:
+            <ul>
+                <li>
+                    Highlight the currently selected entry in the entry selector for 'My Entries'.
+                </li>
+                <li>
+                    Add 'Days since last entry' and 'Days since first entry' to 'Game Information'.
+                </li>
+                <li>
+                    Improved styling for 'Edit Entry' and 'Add Game'.
+                </li>
+                <li>
+                    Fix the functionality of edit entry. Not all fields are currently editable (rating and playtime).
+                </li>
+                <li>
+                    Add functionality for custom covers for added games.
+                </li>
+            </ul>
+            <h1>Demo</h1>
+            <p>Direct Link: <a href="https://www.youtube.com/watch?v=Lceo35t39MU">Here</a></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Lceo35t39MU?si=Gkvo3YSbKLwkTOJL"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        </main>
+        <footer>
+            <!-- Purposely not putting links on these as I don't have professional stuff set up, only personal -->
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </footer>
+    </div>
+</body>
+
+</html>

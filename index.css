@@ -1,3 +1,136 @@
-body{
-    display: flexbox;
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    background-color: lightblue;
+    height: 100%;
+    grid-template-rows: .5fr 11fr;
+}
+
+html {
+    background-color: black;
+}
+
+header {
+    grid-column: span 2;
+    text-align: center;
+    background-color: lightskyblue;
+    box-shadow: 5px black inset;
+    height: 50px;
+}
+
+header h1 {
+    font-size: 300%;
+}
+
+main {
+    background-color: lightblue;
+    padding: 1em 2em;
+}
+
+main h1 {
+    display: flex;
+    font-size: 175%;
+    justify-content: center;
+}
+
+main h2 {
+    display: flex;
+    font-size: 125%;
+    justify-content: center;
+}
+
+main p {
+    font-size: 125%;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    grid-column: span 2;
+    max-height: 50px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#logo {
+    width: 200px;
+    /* you can use % */
+    height: auto;
+}
+
+.thumbnail {
+    width: 300px;
+    /* you can use % */
+    height: auto;
+}
+
+
+#me {
+    width: 200px;
+    /* you can use % */
+    height: auto;
+}
+
+footer a,
+main a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.986);
+}
+
+footer a:hover,
+main a:hover {
+    text-shadow: 1px 0px 5px black;
+}
+
+
+nav {
+    text-transform: uppercase;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    height: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    height: 25%;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 1em 0;
+    text-decoration: none;
+    border-bottom: 1px solid silver;
+}
+
+nav a:hover {
+    background-color: lightblue;
+    border-radius: 0px;
+}
+
+nav li:last-of-type a {
+    border-bottom: none;
+}
+
+img {
+    margin: 5px;
 }
